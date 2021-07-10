@@ -1,0 +1,75 @@
+package com.kosta.dto;
+
+import java.util.Date;
+
+public class MemberDTO {
+	int mamber_seq;
+	String member_id;
+	String member_pwd;
+	String name;
+	String email;
+	Date member_date;
+	
+	public MemberDTO(String member_id, String member_pwd, String name, String email) {
+		super();
+		this.member_id = member_id;
+		this.member_pwd = member_pwd;
+		this.name = name;
+		this.email = email;
+	
+	}
+	
+	public int getMamber_seq() {
+		return mamber_seq;
+	}
+
+	public void setMamber_seq(int mamber_seq) {
+		this.mamber_seq = mamber_seq;
+	}
+
+	public String getMember_id() {
+		return member_id;
+	}
+
+	public void setMember_id(String member_id) {
+		this.member_id = member_id;
+	}
+
+	public String getMember_pwd() {
+		return member_pwd;
+	}
+
+	public void setMember_pwd(String member_pwd) {
+		this.member_pwd = member_pwd;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public Date getMember_date() {
+		return member_date;
+	}
+
+	public void setMember_date(Date member_date) {
+		this.member_date = member_date;
+	}
+
+	@Override
+	public String toString() {
+		return "MemberDTO [mamber_seq=" + mamber_seq + ", member_id=" + member_id + ", member_pwd=" + member_pwd
+				+ ", name=" + name + ", email=" + email + ", member_date=" + member_date + "]";
+	}
+}
